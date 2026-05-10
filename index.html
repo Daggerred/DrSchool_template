@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Rajendra Prasad Girija Devi Public School</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">
+      <div class="nav-crest">
+        <!-- School crest/logo SVG — replace with actual logo -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="#c88e40" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z"/>
+        </svg>
+      </div>
+      <div class="nav-brand-text">
+        <b>Dr. R.P. Girija Devi Public School</b>
+        <span>Est. <span class="ph" title="FILL: founding year">1985</span> · Excellence in Education</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#academics">Academics</a></li>
+      <li><a href="#facilities">Facilities</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#admissions" class="nav-apply">Admissions</a></li>
+    </ul>
+    <button class="ham" onclick="toggleMenu()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── MOBILE MENU ── -->
+<div id="mob-menu">
+  <button class="mob-close" onclick="closeMenu()">
+    <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#academics" onclick="closeMenu()">Academics</a>
+  <a href="#facilities" onclick="closeMenu()">Facilities</a>
+  <a href="#achievements" onclick="closeMenu()">Achievements</a>
+  <a href="#events" onclick="closeMenu()">Events</a>
+  <a href="#admissions" onclick="closeMenu()">Admissions</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+<!-- ═══════════════════════════════════════
+     HERO
+═══════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-pill">
+        <i></i>
+        Admissions Open — <span class="ph" title="FILL: academic year">2025–26</span>
+      </div>
+      <h1 class="hero-title">
+        Shaping<br><em>Thoughtful</em><br>Leaders
+      </h1>
+      <span class="hero-school-name">Dr. Rajendra Prasad Girija Devi Public School</span>
+      <p class="hero-desc">
+        Over <span class="ph" title="FILL: years of operation">38 years</span> of academic tradition, moral grounding, and genuine care for every student who walks through our gates.
+      </p>
+      <div class="hero-btns">
+        <a href="#admissions" class="btn btn-gold">Apply for Admission →</a>
+        <a href="#about" class="btn btn-outline">Explore the School</a>
+      </div>
+      <div class="hero-divider">
+        <div class="hero-stats">
+          <div>
+            <span class="h-stat-num"><span class="ph" title="FILL: years since founding">38</span>+</span>
+            <span class="h-stat-label">Years of Legacy</span>
+          </div>
+          <div>
+            <span class="h-stat-num"><span class="ph" title="FILL: total alumni count">4,200</span>+</span>
+            <span class="h-stat-label">Alumni</span>
+          </div>
+          <div>
+            <span class="h-stat-num"><span class="ph" title="FILL: board pass %, verify before publishing">98</span>%</span>
+            <span class="h-stat-label">Board Results</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Right card — visible on desktop -->
+    <div class="hero-card">
+      <div class="crest-ring">
+        <!-- Replace with actual school crest/logo image -->
+        <svg viewBox="0 0 48 48" fill="none" stroke="#c88e40" stroke-width="1.3" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 4L6 13v9c0 10.5 7.5 20.3 18 22.7C34.5 42.3 42 32.5 42 22v-9L24 4z"/>
+          <path d="M16 24h16M24 16v16" stroke-linecap="round"/>
+          <circle cx="24" cy="24" r="5"/>
+        </svg>
+      </div>
+      <h2 class="hcard-name">Dr. Rajendra Prasad<br>Girija Devi Public School</h2>
+      <p class="hcard-est">Est. <span class="ph" title="FILL: founding year">1985</span> · CBSE Affiliated</p>
+      <div class="hcard-divider"></div>
+      <div class="hcard-row">
+        <div class="hcard-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2l9 4v6c0 5.5-3.8 10.7-9 12C6.8 22.7 3 17.5 3 12V6l9-4z"/></svg>
+        </div>
+        <div class="hcard-text">
+          <strong>Academic Excellence</strong>
+          <span>CBSE curriculum with a focus on understanding, not rote learning</span>
+        </div>
+      </div>
+      <div class="hcard-row">
+        <div class="hcard-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <div class="hcard-text">
+          <strong>Sports &amp; Co-curriculars</strong>
+          <span>District-to-state sports, debate, music, and arts programs</span>
+        </div>
+      </div>
+      <div class="hcard-row">
+        <div class="hcard-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="hcard-text">
+          <strong>Character &amp; Values</strong>
+          <span>Ethics, civic sense, and compassion woven into school life</span>
+        </div>
+      </div>
+      <div class="hcard-row">
+        <div class="hcard-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <div class="hcard-text">
+          <strong>Modern Infrastructure</strong>
+          <span>Smart classrooms, science labs, and a 15,000-book library</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TICKER ── -->
+<div class="ticker">
+  <div class="ticker-label">Latest</div>
+  <div style="overflow: hidden; flex: 1;">
+    <div class="ticker-track">
+      <!-- FILL: Replace ticker items with actual school announcements, results, achievements -->
+      <span class="ticker-item"><span class="ticker-dot"></span>CBSE Affiliated · Affiliation No. <span class="ph" title="FILL: CBSE affiliation number">XXXXXXXX</span></span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Classes Nursery to XII</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Admissions Open <span class="ph" title="FILL: session year">2025–26</span> — Limited Seats</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Fully Equipped Science &amp; Computer Labs</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Smart Digital Classrooms in Every Section</span>
+      <span class="ticker-item"><span class="ticker-dot"></span><span class="ph" title="FILL: a real recent achievement e.g. 'Rohit Sharma — District Topper, CBSE XII 2024'">State-Level Sports Champions 2024</span></span>
+      <span class="ticker-item"><span class="ticker-dot"></span>CBSE Affiliated · Affiliation No. <span class="ph" title="FILL: CBSE affiliation number">XXXXXXXX</span></span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Classes Nursery to XII</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Admissions Open <span class="ph" title="FILL: session year">2025–26</span> — Limited Seats</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Fully Equipped Science &amp; Computer Labs</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Smart Digital Classrooms in Every Section</span>
+      <span class="ticker-item"><span class="ticker-dot"></span><span class="ph" title="FILL: a real recent achievement">State-Level Sports Champions 2024</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     ABOUT
+═══════════════════════════════════════ -->
+<section id="about">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="label">Who We Are</span>
+      <h2 class="heading fade-up">A Tradition of <em>Excellence</em></h2>
+      <div class="rule-line" style="margin: 18px auto 0;"></div>
+    </div>
+    <div class="about-layout">
+      <div class="fade-up">
+        <div class="about-text">
+          <p>
+            Founded in <strong><span class="ph" title="FILL: founding year">1985</span></strong>, Dr. Rajendra Prasad Girija Devi Public School has grown from a community vision into one of the region's most respected institutions. We believe every child deserves an education that is rigorous in knowledge and generous in spirit.
+          </p>
+          <p>
+            Our CBSE-affiliated curriculum pairs disciplined academic study with a genuine commitment to sports, creative arts, and character development — because we know that the student who wins a debate or leads a house team is developing skills that no textbook can fully teach.
+          </p>
+        </div>
+        <div class="blockquote-wrap">
+          <q>Education is not preparation for life; education is life itself.</q>
+          <!-- FILL: Replace with an actual quote from the school's motto, founder, or philosophy -->
+          <cite>— School Philosophy</cite>
+        </div>
+        <div class="pillars">
+          <div class="pillar fade-up d1">
+            <div class="pillar-ic">
+              <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <h4>Academic Rigour</h4>
+            <p>Structured learning aligned with CBSE best practices, with an emphasis on conceptual depth over memorisation.</p>
+          </div>
+          <div class="pillar fade-up d2">
+            <div class="pillar-ic">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+            </div>
+            <h4>Creative Arts</h4>
+            <p>Music, fine arts, drama, and literary clubs nurtured alongside academics throughout the school year.</p>
+          </div>
+          <div class="pillar fade-up d3">
+            <div class="pillar-ic">
+              <svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+            </div>
+            <h4>Sports Culture</h4>
+            <p>Dedicated grounds, professional coaches, and a track record of district-to-national level competition.</p>
+          </div>
+          <div class="pillar fade-up d4">
+            <div class="pillar-ic">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h4>Moral Values</h4>
+            <p>Character education and community service built into daily school life — not treated as an afterthought.</p>
+          </div>
+        </div>
+      </div>
+      <div class="fade-up d2">
+        <!-- PRINCIPAL CARD — fill all marked fields -->
+        <div class="principal-card">
+          <div class="pcrd-avatar"><span class="ph" title="FILL: Principal's initials (e.g. 'AK')">P</span></div>
+          <div class="pcrd-name">Principal's Message</div>
+          <span class="pcrd-role">Principal, RPGD Public School</span>
+          <p class="pcrd-msg">
+            <!-- FILL: Replace with an actual quote or message from the Principal. Avoid generic platitudes. Something personal and specific works best. -->
+            "At RPGD School, we do not merely deliver a syllabus — we build an environment where a child dares to ask questions, learns to accept failure, and discovers what they are truly capable of. Every student who leaves our school carries something that no exam can measure: the quiet confidence of knowing they belong to something meaningful."
+          </p>
+        </div>
+        <div class="meta-rows">
+          <div class="meta-row">
+            <div class="meta-ic">
+              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <div>
+              <div class="meta-lbl">Affiliation</div>
+              <div class="meta-val">CBSE, New Delhi · Aff. No. <span class="ph" title="FILL: CBSE affiliation number">XXXXXXXX</span></div>
+            </div>
+          </div>
+          <div class="meta-row">
+            <div class="meta-ic">
+              <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div>
+              <div class="meta-lbl">Classes Offered</div>
+              <div class="meta-val">Nursery — Class XII</div>
+            </div>
+          </div>
+          <div class="meta-row">
+            <div class="meta-ic">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div>
+              <div class="meta-lbl">Faculty Strength</div>
+              <div class="meta-val"><span class="ph" title="FILL: actual number of teachers">120</span>+ Qualified Teachers</div>
+            </div>
+          </div>
+          <div class="meta-row">
+            <div class="meta-ic">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <div>
+              <div class="meta-lbl">Website</div>
+              <div class="meta-val"><span class="ph" title="FILL: actual website URL">www.school-website.com</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     PRINCIPAL'S QUOTE
+═══════════════════════════════════════ -->
+<section id="principal-quote">
+  <div class="pq-inner">
+    <div class="pq-portrait">
+      <div class="pq-photo-frame">
+        <!--
+          FILL: Replace this placeholder with a real <img> tag:
+          <img src="images/principal.jpg" alt="Principal Name">
+          Recommended: 300×300px, face well-lit, professional attire.
+        -->
+        <div class="pq-photo-placeholder">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>Add Principal's Photo Here</span>
+        </div>
+      </div>
+      <div>
+        <!-- FILL: Principal's full name -->
+        <div class="pq-name"><span class="ph" title="FILL: Principal's full name">Dr. [Full Name]</span></div>
+        <!-- FILL: Designation e.g. Principal / Vice Principal -->
+        <div class="pq-role"><span class="ph" title="FILL: designation">Principal</span></div>
+      </div>
+    </div>
+    <div>
+      <p class="pq-quote">
+        <!-- FILL: Replace with an actual quote from the Principal. The more personal and specific, the better. Avoid generic lines about "bright futures." -->
+        "At RPGD School, we do not merely deliver a syllabus — we build an environment where a child <strong>dares to ask questions</strong>, learns to accept failure, and discovers what they are truly capable of. Every student who leaves our school carries something that no exam can measure: the quiet confidence of knowing they belong to something meaningful."
+      </p>
+      <div class="pq-sig">
+        <div class="pq-sig-line"></div>
+        <!-- FILL: Principal's name for the sign-off -->
+        <div class="pq-sig-text"><span class="ph" title="FILL: Principal's name and year e.g. 'Dr. Anita Kumar, Principal since 2018'">Dr. [Name] · Principal, RPGD Public School</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     ACADEMICS
+═══════════════════════════════════════ -->
+<section id="academics">
+  <div class="container">
+    <div class="acad-head">
+      <div>
+        <span class="label">Curriculum &amp; Programs</span>
+        <h2 class="heading fade-up">Our Academic <em>Programs</em></h2>
+        <div class="rule-line" style="margin-top: 18px;"></div>
+      </div>
+      <p class="acad-desc">A structured, progressive curriculum from early childhood through senior secondary — designed for depth, not merely coverage.</p>
+    </div>
+    <div class="programs">
+      <div class="prog-card fade-up">
+        <div class="prog-n">01</div>
+        <h3>Pre-Primary</h3>
+        <span class="prog-badge">Nursery · LKG · UKG</span>
+        <p>Play-based, activity-driven learning that builds the foundations of language, number sense, and social confidence in a warm, structured environment.</p>
+        <div class="tags">
+          <span class="tag">Phonics</span>
+          <span class="tag">Numeracy</span>
+          <span class="tag">Art &amp; Craft</span>
+          <span class="tag">Activity Play</span>
+        </div>
+      </div>
+      <div class="prog-card fade-up d1">
+        <div class="prog-n">02</div>
+        <h3>Primary School</h3>
+        <span class="prog-badge">Class I — V</span>
+        <p>Foundational academics aligned with CBSE, with strong emphasis on reading comprehension, mathematical reasoning, and environmental awareness.</p>
+        <div class="tags">
+          <span class="tag">English</span>
+          <span class="tag">Mathematics</span>
+          <span class="tag">Science</span>
+          <span class="tag">Hindi</span>
+          <span class="tag">EVS</span>
+        </div>
+      </div>
+      <div class="prog-card fade-up d2">
+        <div class="prog-n">03</div>
+        <h3>Middle School</h3>
+        <span class="prog-badge">Class VI — VIII</span>
+        <p>Subject specialisation begins, with a focus on conceptual understanding, project-based learning, and developing independent thinking and research habits.</p>
+        <div class="tags">
+          <span class="tag">Science</span>
+          <span class="tag">Mathematics</span>
+          <span class="tag">Social Science</span>
+          <span class="tag">Sanskrit</span>
+          <span class="tag">Computer</span>
+        </div>
+      </div>
+      <div class="prog-card fade-up">
+        <div class="prog-n">04</div>
+        <h3>Secondary</h3>
+        <span class="prog-badge">Class IX — X · CBSE Board</span>
+        <p>Comprehensive CBSE board preparation with regular assessments, individual mentoring sessions, and targeted doubt-clearing support across all subjects.</p>
+        <div class="tags">
+          <span class="tag">Physics</span>
+          <span class="tag">Chemistry</span>
+          <span class="tag">Biology</span>
+          <span class="tag">Maths</span>
+          <span class="tag">IT</span>
+        </div>
+      </div>
+      <div class="prog-card fade-up d1">
+        <div class="prog-n">05</div>
+        <h3>Senior Secondary</h3>
+        <span class="prog-badge">Class XI — XII · Science &amp; Commerce</span>
+        <p>Science (PCM / PCB) and Commerce streams with dedicated laboratories, expert faculty, and structured career counselling from Class XI onward.</p>
+        <div class="tags">
+          <span class="tag">PCM</span>
+          <span class="tag">PCB</span>
+          <span class="tag">Accountancy</span>
+          <span class="tag">Business Studies</span>
+          <span class="tag">Economics</span>
+        </div>
+      </div>
+      <div class="prog-card fade-up d2">
+        <div class="prog-n">06</div>
+        <h3>Co-Curriculars</h3>
+        <span class="prog-badge">All Classes</span>
+        <p>Sports, music, dance, drama, debate, Olympiads, NCC/NSS, and social service — each one integral to our school year, not optional extras.</p>
+        <div class="tags">
+          <span class="tag">Sports</span>
+          <span class="tag">Music</span>
+          <span class="tag">Dance</span>
+          <span class="tag">Debate</span>
+          <span class="tag">NCC / NSS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FACILITIES
+═══════════════════════════════════════ -->
+<section id="facilities">
+  <div class="container">
+    <div class="fac-title-wrap">
+      <span class="label">Infrastructure</span>
+      <h2 class="heading fade-up">World-Class <em>Facilities</em></h2>
+      <div class="rule-line"></div>
+    </div>
+    <div class="fac-grid">
+      <div class="fac-card fade-up">
+        <div class="fac-ic">
+          <svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v11m0 0H5m4 0h10m0-11v11m0 0h-4"/></svg>
+        </div>
+        <div class="fac-name">Science Labs</div>
+        <div class="fac-desc">Physics, Chemistry &amp; Biology labs with modern equipment and trained lab assistants</div>
+      </div>
+      <div class="fac-card fade-up d1">
+        <div class="fac-ic">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <div class="fac-name">Computer Lab</div>
+        <div class="fac-desc">High-speed internet, <span class="ph" title="FILL: actual number of workstations">80</span>+ workstations, and structured coding programs from Class VI</div>
+      </div>
+      <div class="fac-card fade-up d2">
+        <div class="fac-ic">
+          <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        </div>
+        <div class="fac-name">Library</div>
+        <div class="fac-desc"><span class="ph" title="FILL: actual book count">15,000</span>+ books, digital resources, periodicals, and a dedicated reading room</div>
+      </div>
+      <div class="fac-card fade-up d3">
+        <div class="fac-ic">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+        </div>
+        <div class="fac-name">Sports Ground</div>
+        <div class="fac-desc">Cricket, Football, Athletics track, Badminton courts, and indoor games facilities</div>
+      </div>
+      <div class="fac-card fade-up">
+        <div class="fac-ic">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <div class="fac-name">Auditorium</div>
+        <div class="fac-desc"><span class="ph" title="FILL: actual seating capacity">800</span>-seat fully equipped hall for annual functions, cultural events, and competitions</div>
+      </div>
+      <div class="fac-card fade-up d1">
+        <div class="fac-ic">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="fac-name">Smart Classrooms</div>
+        <div class="fac-desc">Interactive whiteboards, projectors, and curriculum-aligned digital content in every section</div>
+      </div>
+      <div class="fac-card fade-up d2">
+        <div class="fac-ic">
+          <svg viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        </div>
+        <div class="fac-name">Cafeteria</div>
+        <div class="fac-desc">Hygienic, nutritious meals and snacks served daily under supervision — no outside food required</div>
+      </div>
+      <div class="fac-card fade-up d3">
+        <div class="fac-ic">
+          <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <div class="fac-name">School Transport</div>
+        <div class="fac-desc">GPS-tracked buses covering major routes, with lady attendants on all routes serving girls</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     ACHIEVEMENTS
+═══════════════════════════════════════ -->
+<section id="achievements">
+  <div class="container">
+    <span class="label" style="color:#c88e40;">Honours &amp; Recognition</span>
+    <h2 class="heading heading-light fade-up">Our <em style="color:#d4a04e;">Achievements</em></h2>
+    <div class="rule-line" style="margin-top:16px;"></div>
+    <!-- FILL: All numbers and achievements below must be verified and replaced with real data before publishing -->
+    <div class="ach-layout">
+      <div class="big-nums fade-up">
+        <div class="big-num-card">
+          <span class="big-n"><span class="ph" title="FILL: verified board pass %">98</span>%</span>
+          <div class="big-l">Board Pass Rate</div>
+        </div>
+        <div class="big-num-card">
+          <span class="big-n"><span class="ph" title="FILL: actual count of district toppers over history">47</span></span>
+          <div class="big-l">District Toppers</div>
+        </div>
+        <div class="big-num-card">
+          <span class="big-n"><span class="ph" title="FILL: total sports medals/certificates won">200</span>+</span>
+          <div class="big-l">Sports Medals</div>
+        </div>
+        <div class="big-num-card">
+          <span class="big-n"><span class="ph" title="FILL: number of state/national awards">12</span></span>
+          <div class="big-l">State Awards</div>
+        </div>
+      </div>
+      <div class="ach-list fade-up d2">
+        <!-- FILL: Replace with actual, verifiable achievements with real years and names -->
+        <div class="ach-item">
+          <div class="ach-year"><span class="ph" title="FILL: year">2024</span></div>
+          <div>
+            <h4><span class="ph" title="FILL: actual award name and awarding body">State-Level Best School Award — [Awarding Body Name]</span></h4>
+            <p>Recognised for outstanding academic performance and holistic development programs. <span class="ph" title="FILL: add a specific detail — e.g. 'one of 12 schools selected across the state'">[Add specific detail about this recognition]</span></p>
+          </div>
+        </div>
+        <div class="ach-item">
+          <div class="ach-year"><span class="ph" title="FILL: year">2024</span></div>
+          <div>
+            <h4><span class="ph" title="FILL: e.g. 'Priya Agarwal secured District Rank 1, CBSE Class XII'">Top Ranker — CBSE Class XII Board</span></h4>
+            <p><span class="ph" title="FILL: student's full name, rank, and score">[Student Name] secured [Rank] in the district with [score]% in the CBSE Class XII examinations.</span></p>
+          </div>
+        </div>
+        <div class="ach-item">
+          <div class="ach-year"><span class="ph" title="FILL: year">2023</span></div>
+          <div>
+            <h4><span class="ph" title="FILL: actual competition and level, e.g. 'National Science Olympiad — Gold Medal'">National Science Olympiad — Gold Medal</span></h4>
+            <p><span class="ph" title="FILL: student name and class, e.g. 'Aryan Mehta, Class X'">[Student Name, Class X]</span> won Gold at the National Science Olympiad held in <span class="ph" title="FILL: city">[City]</span>.</p>
+          </div>
+        </div>
+        <div class="ach-item">
+          <div class="ach-year"><span class="ph" title="FILL: year">2022</span></div>
+          <div>
+            <h4><span class="ph" title="FILL: actual award">Best Infrastructure Award — Regional Level</span></h4>
+            <p>Awarded by <span class="ph" title="FILL: awarding body name">the District Education Office</span> for outstanding school facilities and commitment to student wellbeing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     ADMISSIONS
+═══════════════════════════════════════ -->
+<section id="admissions">
+  <div class="container">
+    <span class="label">Join Our School</span>
+    <h2 class="heading fade-up">Admissions <em><span class="ph" title="FILL: academic year">2025–26</span></em></h2>
+    <div class="rule-line" style="margin-top:16px;"></div>
+    <div class="adm-layout">
+      <div class="fade-up">
+        <p class="adm-intro">
+          We welcome students from all backgrounds. Admissions for the academic session <span class="ph" title="FILL: year">2025–26</span> are open across all classes. Seats are limited — we encourage early enquiry.
+        </p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-n">1</div>
+            <div class="step-body">
+              <h4>Fill the Enquiry Form</h4>
+              <p>Submit the online enquiry on this page, or visit the school office between <span class="ph" title="FILL: office hours">8 AM – 2 PM</span>, Monday to Saturday, to collect a printed prospectus.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-n">2</div>
+            <div class="step-body">
+              <h4>School Visit &amp; Interaction</h4>
+              <p>Schedule a campus tour. Our admissions coordinator will take you through the school and answer all your questions in person.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-n">3</div>
+            <div class="step-body">
+              <h4>Submit Required Documents</h4>
+              <p>Bring previous year marksheets, transfer certificate (for Class II onwards), birth certificate, and two passport photographs.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-n">4</div>
+            <div class="step-body">
+              <h4>Admission Confirmed</h4>
+              <p>Upon document verification and fee payment, admission is confirmed. The school will share the academic calendar, uniform details, and booklist.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-up d2">
+        <div class="form-box">
+          <h3>Request Information</h3>
+          <p>Fill in your details and our admissions team will reach out within one working day.</p>
+          <div class="fg-row">
+            <div class="fg">
+              <label>Parent / Guardian Name</label>
+              <input type="text" placeholder="Full Name">
+            </div>
+            <div class="fg">
+              <label>Student Name</label>
+              <input type="text" placeholder="Child's Name">
+            </div>
+          </div>
+          <div class="fg">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+91 98765 43210">
+          </div>
+          <div class="fg">
+            <label>Email Address</label>
+            <input type="email" placeholder="your@email.com">
+          </div>
+          <div class="fg-row">
+            <div class="fg">
+              <label>Class Applying For</label>
+              <select>
+                <option>Select Class</option>
+                <option>Nursery / LKG / UKG</option>
+                <option>Class I – V</option>
+                <option>Class VI – VIII</option>
+                <option>Class IX – X</option>
+                <option>Class XI – XII</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label>Academic Year</label>
+              <select>
+                <option>2025 – 26</option>
+                <option>2026 – 27</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn-submit">Submit Enquiry →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     EVENTS
+═══════════════════════════════════════ -->
+<section id="events">
+  <div class="container">
+    <div class="ev-head">
+      <div>
+        <span class="label">School Calendar</span>
+        <h2 class="heading fade-up">Upcoming <em>Events</em></h2>
+        <div class="rule-line" style="margin-top:16px;"></div>
+      </div>
+      <a href="#" class="ev-more">View Full Calendar →</a>
+    </div>
+    <!-- FILL: Replace all events below with actual upcoming school events, dates, and venues -->
+    <div class="ev-grid">
+      <div class="ev-card fade-up">
+        <div class="ev-top">
+          <div class="ev-date-chip">
+            <span class="d"><span class="ph" title="FILL: actual date">15</span></span>
+            <span class="m"><span class="ph" title="FILL: month">Aug</span></span>
+          </div>
+          <h3><span class="ph" title="FILL: event name">Independence Day Celebration</span></h3>
+          <span class="ev-type"><span class="ph" title="FILL: type and audience e.g. 'National Event · All Classes'">National Event · All Classes</span></span>
+        </div>
+        <div class="ev-body">
+          <p><span class="ph" title="FILL: 2-3 sentence description of the event">A grand Independence Day ceremony with flag hoisting, cultural performances, patriotic songs, and student speeches — open to all parents.</span></p>
+          <div class="ev-meta">
+            <span>
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span class="ph" title="FILL: start time">8:00 AM</span>
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span class="ph" title="FILL: venue e.g. 'School Ground' or 'Auditorium'">School Ground</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="ev-card fade-up d1">
+        <div class="ev-top">
+          <div class="ev-date-chip">
+            <span class="d"><span class="ph" title="FILL: date">22</span></span>
+            <span class="m"><span class="ph" title="FILL: month">Sep</span></span>
+          </div>
+          <h3><span class="ph" title="FILL: event name">Annual Science Exhibition</span></h3>
+          <span class="ev-type"><span class="ph" title="FILL: type and classes">Academic · Class VI–XII</span></span>
+        </div>
+        <div class="ev-body">
+          <p><span class="ph" title="FILL: event description">Students present science and technology projects to parents, judges, and invited guests. Best projects win district-level representation.</span></p>
+          <div class="ev-meta">
+            <span>
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span class="ph" title="FILL: time">10:00 AM</span>
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span class="ph" title="FILL: venue">School Auditorium</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="ev-card fade-up d2">
+        <div class="ev-top">
+          <div class="ev-date-chip">
+            <span class="d"><span class="ph" title="FILL: date">12</span></span>
+            <span class="m"><span class="ph" title="FILL: month">Oct</span></span>
+          </div>
+          <h3><span class="ph" title="FILL: event name">Annual Sports Day 2025</span></h3>
+          <span class="ev-type"><span class="ph" title="FILL: type">Sports · All Classes</span></span>
+        </div>
+        <div class="ev-body">
+          <p><span class="ph" title="FILL: event description">Athletics, team sports, relay races, and the March Past by all four houses. Chief Guest to be announced. Parents are warmly invited.</span></p>
+          <div class="ev-meta">
+            <span>
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span class="ph" title="FILL: time">7:30 AM</span>
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span class="ph" title="FILL: venue">Main Sports Ground</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     TESTIMONIALS
+═══════════════════════════════════════ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="testi-title-wrap">
+      <span class="label" style="color:#c88e40;">What Parents &amp; Alumni Say</span>
+      <h2 class="heading heading-light fade-up">Voices from Our <em style="color:#d4a04e;">Community</em></h2>
+      <div class="rule-line"></div>
+    </div>
+    <!-- FILL: Replace with real testimonials. Get written permission from parents/alumni before publishing. Use actual names or initials if preferred. -->
+    <div class="testi-grid">
+      <div class="testi-card fade-up">
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <blockquote><span class="ph" title="FILL: actual testimonial from a real parent. Get permission before publishing.">"The school has genuinely changed how my daughter approaches learning. She asks better questions now, and she's far more confident than she was two years ago. The teachers know every child by name — that matters enormously."</span></blockquote>
+        <div class="testi-auth">
+          <div class="auth-av"><span class="ph" title="FILL: parent's initial">S</span></div>
+          <div>
+            <div class="auth-name"><span class="ph" title="FILL: parent's name">Sunita Sharma</span></div>
+            <div class="auth-role"><span class="ph" title="FILL: relationship e.g. 'Parent, Class VIII'">Parent of Class VIII Student</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fade-up d1">
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <blockquote><span class="ph" title="FILL: actual testimonial from a real parent or alumni. Get permission.">"My son secured <span class='ph' title='FILL: actual percentage'>94%</span> in his boards and is now studying at <span class='ph' title='FILL: actual college name'>[college name]</span>. The discipline here is real, but so is the freedom to explore. The school prepared him well — for exams and for life."</span></blockquote>
+        <div class="testi-auth">
+          <div class="auth-av"><span class="ph" title="FILL: initial">R</span></div>
+          <div>
+            <div class="auth-name"><span class="ph" title="FILL: name">Ramesh Gupta</span></div>
+            <div class="auth-role"><span class="ph" title="FILL: role">Parent, Class of 2024 Alumnus</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fade-up d2">
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <blockquote><span class="ph" title="FILL: actual testimonial from an alumni. Get permission.">"I graduated from RPGD <span class='ph' title='FILL: year'>twelve years ago</span> and still come back for every Annual Day. The friendships, the teachers, the habits of thought this school built in me — I carry all of it still."</span></blockquote>
+        <div class="testi-auth">
+          <div class="auth-av"><span class="ph" title="FILL: initial">P</span></div>
+          <div>
+            <div class="auth-name"><span class="ph" title="FILL: alumna name">Priya Mishra</span></div>
+            <div class="auth-role"><span class="ph" title="FILL: batch year">Alumni · Class of 2012</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <span class="label">Get in Touch</span>
+    <h2 class="heading fade-up">Contact <em>Us</em></h2>
+    <div class="rule-line" style="margin-top:16px;"></div>
+    <div class="contact-layout">
+      <div class="fade-up">
+        <div class="cdetail">
+          <div class="cic">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <h4>Address</h4>
+            <!-- FILL: Full postal address -->
+            <p><span class="ph" title="FILL: complete school address including pincode">Dr. Rajendra Prasad Girija Devi Public School, [Street / Colony], [City], [State] — [Pincode]</span></p>
+          </div>
+        </div>
+        <div class="cdetail">
+          <div class="cic">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.58 3.43 2 2 0 0 1 3.54 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6.29 6.29l1.46-.73a2 2 0 0 1 2.11.44 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <h4>Phone</h4>
+            <!-- FILL: real phone numbers -->
+            <a href="tel:+91XXXXXXXXXX"><span class="ph" title="FILL: main office number">+91 XXXXX XXXXX</span></a><br>
+            <a href="tel:+91XXXXXXXXXX" style="font-size:13.5px; color:var(--ink-soft);"><span class="ph" title="FILL: admissions direct number">+91 XXXXX XXXXX</span> (Admissions)</a>
+          </div>
+        </div>
+        <div class="cdetail">
+          <div class="cic">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <h4>Email</h4>
+            <!-- FILL: actual email address -->
+            <a href="mailto:info@school.com"><span class="ph" title="FILL: school email address">info@school-email.com</span></a>
+          </div>
+        </div>
+        <div class="cdetail">
+          <div class="cic">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <h4>Office Hours</h4>
+            <!-- FILL: actual school timings -->
+            <p>Monday – Saturday<br><span class="ph" title="FILL: actual office opening/closing time">8:00 AM – 4:00 PM</span></p>
+          </div>
+        </div>
+        <!-- GOOGLE MAP EMBED -->
+        <!-- 
+          TO ADD YOUR SCHOOL LOCATION:
+          1. Go to https://www.google.com/maps
+          2. Search for your school address
+          3. Click "Share" button
+          4. Click "Embed a map" tab
+          5. Copy the <iframe> code
+          6. Replace the iframe below with your code
+        -->
+        <div class="map-container" style="margin-top: 24px; border-radius: 12px; overflow: hidden; height: 400px; border: 2px solid #e8e0d0;">
+          <!-- REPLACE THIS IFRAME WITH YOUR GOOGLE MAPS EMBED CODE -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.2!2d77.2!3d28.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM2JzAwLjAiTiA3N8KwMTInMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <!-- After adding your map, you can delete this comment -->
+        </div>
+        <div style="margin-top: 12px; text-align: center;">
+          <a href="https://maps.google.com/?q=YOUR_SCHOOL_ADDRESS" target="_blank" rel="noopener" style="display: inline-block; background: #b5640a; color: #152030; padding: 10px 24px; border-radius: 6px; font-size: 13px; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px;">
+            Open in Google Maps →
+          </a>
+        </div>
+      </div>
+      <div class="cfm fade-up d2">
+        <h3>Send Us a Message</h3>
+        <p>Questions about admissions, curriculum, or upcoming events? Write to us and we'll respond within one working day.</p>
+        <div class="fg-row">
+          <div class="fg">
+            <label>Your Name</label>
+            <input type="text" placeholder="Full Name">
+          </div>
+          <div class="fg">
+            <label>Phone</label>
+            <input type="tel" placeholder="+91">
+          </div>
+        </div>
+        <div class="fg">
+          <label>Email Address</label>
+          <input type="email" placeholder="your@email.com">
+        </div>
+        <div class="fg">
+          <label>Subject</label>
+          <input type="text" placeholder="e.g. Admissions Query for Class VI">
+        </div>
+        <div class="fg">
+          <label>Message</label>
+          <textarea placeholder="Write your message here…"></textarea>
+        </div>
+        <button class="btn-submit">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+<footer>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <div class="foot-brand-logo">
+        <div class="foot-crest">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c88e40" stroke-width="1.5">
+            <path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z"/>
+          </svg>
+        </div>
+        <div class="foot-sname">Dr. Rajendra Prasad<br>Girija Devi Public School</div>
+      </div>
+      <p>Building character, inspiring curiosity, and nurturing excellence in every student since <span class="ph" title="FILL: founding year">1985</span>. CBSE Affiliated · Nursery to Class XII.</p>
+      <div class="foot-social">
+        <!-- FILL: Replace href="#" with actual social media profile URLs -->
+        <a class="soc" href="#" title="Facebook" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a class="soc" href="#" title="Instagram" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a class="soc" href="#" title="YouTube" aria-label="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+        </a>
+        <a class="soc" href="#" title="WhatsApp" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#admissions">Admissions</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Academics</h4>
+      <ul>
+        <li><a href="#">Pre-Primary</a></li>
+        <li><a href="#">Primary School</a></li>
+        <li><a href="#">Middle School</a></li>
+        <li><a href="#">Class IX – X</a></li>
+        <li><a href="#">Class XI – XII</a></li>
+        <li><a href="#">Co-Curricular</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Information</h4>
+      <ul>
+        <!-- FILL: Link these to actual pages or PDF documents when ready -->
+        <li><a href="#">Fee Structure</a></li>
+        <li><a href="#">School Timings</a></li>
+        <li><a href="#">School Uniform</a></li>
+        <li><a href="#">Holiday List</a></li>
+        <li><a href="#">CBSE Results</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <p>© <span class="ph" title="FILL: current year">2025</span> Dr. Rajendra Prasad Girija Devi Public School. All rights reserved.</p>
+    <!-- FILL: Replace with actual website URL -->
+    <p>Website: <a href="#"><span class="ph" title="FILL: actual website domain">www.school-website.com</span></a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

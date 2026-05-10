@@ -1,0 +1,68 @@
+═══════════════════════════════════════════════════════════
+  📍 QUICK GUIDE: Add Google Maps to Your Website
+═══════════════════════════════════════════════════════════
+
+STEP 1: Get Your Map Code
+──────────────────────────
+1. Open: https://www.google.com/maps
+2. Search: "Your School Name and Address"
+3. Click: "Share" button (left side)
+4. Click: "Embed a map" tab
+5. Click: "COPY HTML"
+
+You'll get code like this:
+┌─────────────────────────────────────────────────────────┐
+│ <iframe src="https://www.google.com/maps/embed?pb=...  │
+│   width="600" height="450" style="border:0;"            │
+│   allowfullscreen="" loading="lazy"></iframe>           │
+└─────────────────────────────────────────────────────────┘
+
+
+STEP 2: Replace in Your Website
+────────────────────────────────
+1. Open: index.html (in your school-ssds folder)
+2. Find: Line ~845 (search for "REPLACE THIS IFRAME")
+3. Replace: The entire <iframe> tag with your copied code
+
+
+STEP 3: Update the Link
+────────────────────────
+Find this line (around line 855):
+  <a href="https://maps.google.com/?q=YOUR_SCHOOL_ADDRESS"
+
+Replace YOUR_SCHOOL_ADDRESS with your actual address:
+  Example: Dr.+Rajendra+Prasad+School+Delhi
+  (Use + instead of spaces)
+
+
+DONE! 🎉
+────────
+Your map will now show on your website!
+
+
+═══════════════════════════════════════════════════════════
+  💡 NEED HELP?
+═══════════════════════════════════════════════════════════
+
+Just tell me your school's:
+  • Full address, OR
+  • City/area, OR  
+  • Google Maps link
+
+I'll generate the exact code for you!
+
+
+═══════════════════════════════════════════════════════════
+  📝 EXAMPLE
+═══════════════════════════════════════════════════════════
+
+If your school is in Delhi, Connaught Place:
+
+Your link should be:
+<a href="https://maps.google.com/?q=Connaught+Place+Delhi">
+
+Or with coordinates:
+<a href="https://maps.google.com/?q=28.6315,77.2167">
+
+
+═══════════════════════════════════════════════════════════
