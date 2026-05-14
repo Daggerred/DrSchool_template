@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dr. Rajendra Prasad Girija Devi Public School</title>
+<link rel="icon" type="image/png" href="images/logo.jpeg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -177,6 +178,21 @@
       <h2 class="heading fade-up">A Tradition of <em>Excellence</em></h2>
       <div class="rule-line" style="margin: 18px auto 0;"></div>
     </div>
+    
+    <!-- School Photos Slider - Full Width -->
+    <div class="school-gallery fade-up" style="margin: 56px 0 64px; position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12);">
+      <div class="gallery-track" style="display: flex; transition: transform 0.5s ease;">
+        <img src="images/school-1.png" alt="School Classroom" style="width: 100%; flex-shrink: 0; display: block;">
+        <img src="images/school-2.png" alt="School Building" style="width: 100%; flex-shrink: 0; display: block;">
+      </div>
+      <button class="gallery-prev" onclick="slideGallery(-1)" style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); background: rgba(21,32,48,0.8); color: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 20px; display: flex; align-items: center; justify-content: center; z-index: 10;">‹</button>
+      <button class="gallery-next" onclick="slideGallery(1)" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); background: rgba(21,32,48,0.8); color: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 20px; display: flex; align-items: center; justify-content: center; z-index: 10;">›</button>
+      <div class="gallery-dots" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+        <span class="dot active" onclick="goToSlide(0)" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(181,100,10,0.8); cursor: pointer; transition: all 0.3s;"></span>
+        <span class="dot" onclick="goToSlide(1)" style="width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer; transition: all 0.3s;"></span>
+      </div>
+    </div>
+    
     <div class="about-layout">
       <div class="fade-up">
         <div class="about-text">
@@ -226,9 +242,9 @@
       <div class="fade-up d2">
         <!-- PRINCIPAL CARD — fill all marked fields -->
         <div class="principal-card">
-          <div class="pcrd-avatar"><span class="ph" title="FILL: Principal's initials (e.g. 'AK')">P</span></div>
-          <div class="pcrd-name">Principal's Message</div>
-          <span class="pcrd-role">Principal, RPGD Public School</span>
+          <div class="pcrd-avatar" style="background-image: url('images/director.png'); background-size: cover; background-position: center; color: transparent;">A</div>
+          <div class="pcrd-name">Anshu</div>
+          <span class="pcrd-role">Director, RPGD Public School</span>
           <p class="pcrd-msg">
             <!-- FILL: Replace with an actual quote or message from the Principal. Avoid generic platitudes. Something personal and specific works best. -->
             "At RPGD School, we do not merely deliver a syllabus — we build an environment where a child dares to ask questions, learns to accept failure, and discovers what they are truly capable of. Every student who leaves our school carries something that no exam can measure: the quiet confidence of knowing they belong to something meaningful."
@@ -284,21 +300,11 @@
   <div class="pq-inner">
     <div class="pq-portrait">
       <div class="pq-photo-frame">
-        <!--
-          FILL: Replace this placeholder with a real <img> tag:
-          <img src="images/principal.jpg" alt="Principal Name">
-          Recommended: 300×300px, face well-lit, professional attire.
-        -->
-        <div class="pq-photo-placeholder">
-          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          <span>Add Principal's Photo Here</span>
-        </div>
+        <img src="images/director.png" alt="School Director" style="width: 100%; height: 100%; object-fit: cover;">
       </div>
       <div>
-        <!-- FILL: Principal's full name -->
-        <div class="pq-name"><span class="ph" title="FILL: Principal's full name">Dr. [Full Name]</span></div>
-        <!-- FILL: Designation e.g. Principal / Vice Principal -->
-        <div class="pq-role"><span class="ph" title="FILL: designation">Principal</span></div>
+        <div class="pq-name">Anshu</div>
+        <div class="pq-role">Director</div>
       </div>
     </div>
     <div>
@@ -844,7 +850,7 @@
         <div class="map-container" style="margin-top: 24px; border-radius: 12px; overflow: hidden; height: 400px; border: 2px solid #e8e0d0;">
           <!-- REPLACE THIS IFRAME WITH YOUR GOOGLE MAPS EMBED CODE -->
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.2!2d77.2!3d28.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM2JzAwLjAiTiA3N8KwMTInMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.123456789!2d80.5!3d26.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sInduyaganj%20Gursahaiganj!5e0!3m2!1sen!2sin!4v1234567890"
             width="100%" 
             height="400" 
             style="border:0;" 
@@ -855,7 +861,7 @@
           <!-- After adding your map, you can delete this comment -->
         </div>
         <div style="margin-top: 12px; text-align: center;">
-          <a href="https://maps.google.com/?q=YOUR_SCHOOL_ADDRESS" target="_blank" rel="noopener" style="display: inline-block; background: #b5640a; color: #152030; padding: 10px 24px; border-radius: 6px; font-size: 13px; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px;">
+          <a href="https://maps.google.com/?q=Induyaganj+Gursahaiganj" target="_blank" rel="noopener" style="display: inline-block; background: #b5640a; color: #152030; padding: 10px 24px; border-radius: 6px; font-size: 13px; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px;">
             Open in Google Maps →
           </a>
         </div>

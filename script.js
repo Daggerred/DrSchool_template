@@ -58,3 +58,44 @@ if (statsSection) {
 document.querySelectorAll('.ph').forEach(el => {
   el.setAttribute('title', el.title || 'FILL: update this before publishing');
 });
+
+
+// ── School Gallery Slider ──
+let currentSlide = 0;
+const totalSlides = 2;
+
+function slideGallery(direction) {
+  currentSlide += direction;
+  if (currentSlide < 0) currentSlide = totalSlides - 1;
+  if (currentSlide >= totalSlides) currentSlide = 0;
+  updateGallery();
+}
+
+function goToSlide(index) {
+  currentSlide = index;
+  updateGallery();
+}
+
+function updateGallery() {
+  const track = document.querySelector('.gallery-track');
+  const dots = document.querySelectorAll('.dot');
+  
+  if (track) {
+    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+  
+  dots.forEach((dot, index) => {
+    if (index === currentSlide) {
+      dot.style.background = 'rgba(181,100,10,0.8)';
+      dot.style.width = '24px';
+    } else {
+      dot.style.background = 'rgba(255,255,255,0.5)';
+      dot.style.width = '10px';
+    }
+  });
+}
+
+// Auto-slide every 5 seconds
+setInterval(() => {
+  slideGallery(1);
+}, 5000);
